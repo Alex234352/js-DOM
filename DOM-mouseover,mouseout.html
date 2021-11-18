@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM mouseover, mouseout</title>
+</head>
+
+<body>
+
+   <input id='button' type='submit'>
+
+
+   <input id="button1" type="submit" value="button1">
+   <input id="button2" type="submit" value="button2">
+
+   <script>
+
+      let button1 = document.querySelector('#button1')
+      button1.addEventListener('click', clicker);
+
+      function clicker() {
+
+         alert('Nu privet')
+      }
+
+
+
+
+
+
+
+
+
+//otvedenie kursora
+
+      // let button = document.querySelector('#button');
+      // button.addEventListener('mouseout', function () {
+      //    alert('Zdorov!')
+      // })
+
+
+//navedenie kursora
+
+      // let button = document.querySelector('#button');
+      // button.addEventListener('mouseover', function () {
+      //    alert('Zdorov!')
+      // })
+
+
+//dvojnoj schelcok po elementu
+
+      // let button = document.querySelector('#button');
+      // button.addEventListener('dblclick', function () {
+      //    alert('Zdorov!')
+      // })
+
+//
+
+   </script>
+</body>
+
+</html>

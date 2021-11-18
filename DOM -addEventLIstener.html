@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM sobitija -addEventLIstener</title>
+</head>
+
+<body>
+   <input id="button" type="submit">
+
+   <input id="button1" type="submit">
+   <input id="button2" type="submit">
+   <input id="button3" type="submit">
+   <script>
+
+      let button = document.querySelector('#button')
+      button.addEventListener('click', function () {
+         alert('!!!')
+      })
+
+      let button1 = document.querySelector('#button1')
+      button1.addEventLIstener('click', function () {
+
+         alert('1');
+      });
+
+      let button2 = document.querySelector('#button2')
+      button2.addEventLIstener('click', function () {
+
+         alert('2');
+      });
+
+
+      let button3 = document.querySelector('#button3')
+      button3.addEventLIstener('click', function () {
+
+         alert('3');
+      });
+
+
+   </script>
+</body>
+
+</html>
