@@ -1,0 +1,16 @@
+Даны 3 абзаца с текстом. По нажатию на первый абзац запишите в его текст число 1, 
+// по нажатию на второй абзац запишите в его текст число 2, а по нажатию на третий - запишите в его текст число 3.
+
+//       let elem = document.querySelector('#elem1')
+//       elem.addEventListener('click', function () {
+//          elem.innerHTML = 'KIEV NE SPIT'
+//       })
+//       let elem2 = document.querySelector('#elem2')
+//       elem2.addEventListener('click', function () {
+//          elem2.innerHTML = 'MOSKVA NE SPIT'
+//       })
+//       let elem3 = document.querySelector('#elem3')
+//       elem3.addEventListener('click', function () {
+//          elem3.innerHTML = 'OSLO NE SPIT'
+//       })
+
