@@ -1,0 +1,8 @@
+Дан абзац и кнопка. По нажатию на кнопку запишите в абзац текст '<i>hello</i>'.
+
+let elem1 = document.querySelector('#elem1')
+
+      let button = document.querySelector('#button')
+      button.addEventListener('click', function () {
+         elem1.innerHTML = `<i>hello<i>`
+      })
