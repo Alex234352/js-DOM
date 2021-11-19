@@ -1,0 +1,11 @@
+
+      // Дан абзац и кнопка. В абзаце записано какое-то число. 
+      // По нажатию на кнопку возведите значение абзаца в квадрат и запишите его обратно.
+
+
+      let elem1 = document.querySelector('#elem1')
+      let button = document.querySelector('#button')
+      button.addEventListener('click', function () {
+         elem1.innerHTML = Number(elem1.innerHTML) ** 2
+
+      })
