@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM class-for</title>
+</head>
+
+<body>
+   <!-- <input id="elem1" class="aaa bbb">
+   <input id="elem2" class="aghjghj"> -->
+   <input id="elem3" class="aghjghj">
+
+   <!-- <div id="text" class="content no-gap"></div>
+   <div id="text2"></div> -->
+
+   <div id="text3" class="aaa bbb ccc"></div>
+
+   <script>
+
+
+
+      // Дана также кнопка. По нажатию на кнопку прочитайте и 
+      // выведите на экран значение атрибута class нашего дива.
+
+      // let elem1 = document.querySelector('#elem1')
+      // let text = document.querySelector('#text')
+      // elem1.addEventListener('click', function () {
+      //    alert(text.className)
+      // })
+
+
+      //Дана также кнопка. По нажатию на кнопку запишите в атрибут class нашего дива какой-нибудь класс.
+
+      // let elem2 = document.querySelector('#elem2')
+      // let text2 = document.querySelector('#text2')
+
+
+      // elem2.addEventListener('click', function () {
+      //    text.className = 'Newtext'
+      // })
+
+
+      // Дана также кнопка. По нажатию на кнопку получите массив CSS классов нашего дива.
+
+
+      let elem3 = document.querySelector('#elem3')
+      let text3 = document.querySelector('#text3')
+      elem3.addEventListener('click', function () {
+         let arr = text3.className.split(' ')
+         alert(arr)
+      })
+
+
+
+
+
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM this</title>
+</head>
+
+<body>
+
+
+   <input id="search" value="">
+   <input id="search2" value="1">
+
+
+
+   <input id="search3" value="3">
+   <input id="search4" value='2'>
+   <input id='search5' value="3">
+
+   <p id='first'>Навсегда тебя запомнил</p>
+   <p id='second'>Навсегда тебя запомнил, suka</p>
+   <p id='third'>Навсегда тебя запомнил,mraz</p>
+   <p id='fourth'>Навсегда тебя запомнил,gondon</p>
+   <p id='fifth'>Навсегда тебя запомнил,schliuha</p>
+
+   <script>
+
+      // Дан инпут. По получению фокуса этим инпутом запишите в него число 1, а по потери фокуса - число 2. 
+      // Для обращения у инпуту внутри функции-обработчика используйте объект this.
+
+      // let search = document.querySelector('#search')
+      // search.addEventListener('focus', function () {
+      //    this.value = 1
+      // })
+
+      // search.addEventListener('blur', function () {
+      //    this.value = 2;
+      // })
+
+      // Дана кнопка, 
+      // значением которой служит число 1. 
+      // Сделайте так, чтобы по клику на эту кнопку ее значение каждый раз увеличивалось на единицу.
+
+      // let search2 = document.querySelector('#search2')
+      // search2.addEventListener('click', function () {
+      //    this.value = Number(search2.value) + 1;
+      // })
+
+
+      // Даны 5 абзацев с какими-то текстами. По клику на любой абзац запишите в конец его текста восклицательный знак.
+      // let first = document.querySelector('#first')
+      // let second = document.querySelector('#second')
+      // let third = document.querySelector('#third')
+      // let fourth = document.querySelector('#fourth')
+      // let fifth = document.querySelector('#fifth')
+
+      // first.addEventListener('click', func)
+      // second.addEventListener('click', func)
+      // third.addEventListener('click', func)
+      // fourth.addEventListener('click', func)
+      // fifth.addEventListener('click', func)
+
+      // function func() {
+      //    this.innerHTML = this.innerHTML + '!'
+      // }
+
+
+      // Даны 3 инпута, в которых записаны какие-то числа.
+      //  По потери фокуса в любом из инпутов возведите стоящее в нем число в квадрат.
+
+
+      let search3 = document.querySelector('#search3')
+      let search4 = document.querySelector('#search4')
+      let search5 = document.querySelector('#search5')
+
+      search3.addEventListener('blur', func2)
+      search4.addEventListener('blur', func2)
+      search5.addEventListener('blur', func2)
+
+
+      function func2() {
+         this.value = Number(this.value) ** 2;
+      }
+
+
+
+   </script>
+</body>
+
+</html>

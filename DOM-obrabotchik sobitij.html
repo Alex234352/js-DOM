@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM this</title>
+</head>
+
+<body>
+
+   <!-- <input class="input" value='1'>
+   <input class="input" value='2'>
+   <input class="input" value='3'> -->
+
+
+   <!-- <p class='text'> 2</p>
+   <p class='text'> 3</p>
+   <p class='text'> 4</p> -->
+
+   <div>1</div>
+   <div>2</div>
+   <div>3</div>
+   <div>4</div>
+   <div>5</div>
+
+   <script>
+      // Даны также инпуты. Сделайте так, 
+      // чтобы по потери фокуса в любом из наших инпутов выполнялась приведенная выше функция.
+
+      // let input = document.querySelectorAll('.input')
+      // for (let number of input) {
+      //    number.addEventListener('blur', func)
+      // }
+
+
+      // function func() {
+      //    this.value = Number(this.value) + 1;
+      // }
+
+
+
+      // Даны абзацы с числами. 
+      // Сделайте так, чтобы по клику на любой абзац его число в нем возводилось в квадрат.
+
+      // let text = document.querySelectorAll('.text')
+
+      // for (let key of text) {
+      //    key.addEventListener('click', func)
+
+      // }
+
+      // function func() {
+      //    this.innerHTML = Number(this.innerHTML) ** 2;
+      // }
+
+
+      // Сделайте функцию-обработчик анонимной.
+      // <div>1</div>
+      // <div>2</div>
+      // <div>3</div>
+      // <div>4</div>
+      // <div>5</div>
+
+      let divs = document.querySelectorAll('div');
+
+      for (let div of divs) {
+         div.addEventListener('click', function () {
+            this.innerHTML++
+         });
+      }
+
+
+
+
+
+
+
+
+
+   </script>
+</body>
+
+</html>

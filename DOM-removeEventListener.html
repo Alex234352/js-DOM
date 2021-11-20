@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM removeEVENTLISTENER</title>
+</head>
+
+<body>
+
+   <input id="first" value="1">
+
+
+   <!-- <a href="google.com">Собаки</a> -->
+   <script>
+
+      //  Дана ссылка. По нажатию на эту ссылку добавьте в конец ее текста содержимое ее атрибута href в круглых скобках. 
+      // Сделайте так, чтобы это добавление происходило лишь по первому нажатию.
+      // let dog = document.querySelector('a')
+      // dog.addEventListener('click', function get () {
+      //    alert(this.innerHTML = this.innerHTML + '' + '(' + this.href + ')')
+      //    this.removeEventListener ('click' , get )
+      // })
+
+
+
+      // Дана кнопка, значением которой служит число 1. Сделайте так, 
+      // чтобы по клику на эту кнопку ее значение каждый раз увеличивалось на единицу.
+      //  После того, как значение кнопки достигнет 10 - отвяжите обработчик события, чтобы кнопка больше не реагировала на нажатие.
+
+
+      let button = document.querySelector('#first')
+      button.addEventListener('click', function func() {
+         if (this.value >= 10) {
+            this.removeEventListener('click', func)
+         }
+         else {
+            this.value++
+         }
+      })
+
+
+
+
+
+
+
+   </script>
+</body>
+
+</html>

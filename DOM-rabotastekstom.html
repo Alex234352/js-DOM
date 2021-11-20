@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM rabota s tekstom</title>
+</head>
+
+<body>
+
+   <!-- <p id='elem'>2</p>
+   <p id='elem2'>3</p>
+   <input id='button' type="submit"> -->
+
+
+   <p id='elem1'>єтот пыл не называй судьбою, роковые ваши имена </p>
+   <!-- <p id='elem2'>moskva</p>
+   <p id="elem3">Oslo</p>
+   <input id='button1' type='submit'> -->
+   <input id='button' type='submit'>
+
+
+   <script>
+
+
+
+      // Дан абзац с текстом и кнопка. 
+      // По нажатию на кнопку прочитайте текст абзаца,
+      //          оберните этот текст в теги < b > и запишите новый текст обратно в абзац.
+
+      let elem1 = document.querySelector('#elem1')
+
+      let button = document.querySelector('#button')
+      button.addEventListener('click', function () {
+         alert(elem1.innerHTML)
+      })
+      button.addEventListener('click', function () {
+         elem1.innerHTML = `<b>${elem1.innerHTML}<b>`;
+      })
+
+
+
+
+   //Дан абзац и кнопка. По нажатию на кнопку запишите в абзац текст '<i>hello</i>'.
+
+      // let elem1 = document.querySelector('#elem1')
+
+      // let button = document.querySelector('#button')
+      // button.addEventListener('click', function () {
+      //    elem1.innerHTML = `<i>hello<i>`
+      // })
+
+
+
+
+ // Дан абзац с числом и кнопка. 
+      // По нажатию на кнопку прибавьте к значению абзаца единицу и запишите полученное число обратно.
+
+      // let elem1 = document.querySelector('#elem1')
+
+      // let button = document.querySelector('#button')
+      // button.addEventListener('click', function () {
+      //    elem1.innerHTML = Number(elem1.innerHTML) + 1
+      // })
+
+
+      // Дан абзац и кнопка. В абзаце записано какое-то число. 
+      // По нажатию на кнопку возведите значение абзаца в квадрат и запишите его обратно.
+
+
+      // let elem1 = document.querySelector('#elem1')
+      // let button = document.querySelector('#button')
+      // button.addEventListener('click', function () {
+      //    elem1.innerHTML = Number(elem1.innerHTML) ** 2
+
+      // })
+
+
+
+
+
+
+
+// Даны 3 абзаца с текстом. По нажатию на первый абзац запишите в его текст число 1, 
+// по нажатию на второй абзац запишите в его текст число 2, а по нажатию на третий - запишите в его текст число 3.
+
+//       let elem = document.querySelector('#elem1')
+//       elem.addEventListener('click', function () {
+//          elem.innerHTML = 'KIEV NE SPIT'
+//       })
+//       let elem2 = document.querySelector('#elem2')
+//       elem2.addEventListener('click', function () {
+//          elem2.innerHTML = 'MOSKVA NE SPIT'
+//       })
+//       let elem3 = document.querySelector('#elem3')
+//       elem3.addEventListener('click', function () {
+//          elem3.innerHTML = 'OSLO NE SPIT'
+//       })
+
+
+
+
+
+
+
+
+
+//Даны два абзаца, содержащие своим текстом какие-то числа, и кнопка. По нажатию на кнопку выведите на экран сумму хранящихся чисел.
+
+      // let elem = document.querySelector('#elem')
+      // let elem2 = document.querySelector('#elem2')
+
+      // let button = document.querySelector('#button')
+      // button.addEventListener('click', function () {
+
+      //    alert(elem1 + elem2.innerHTML)
+      // })
+
+
+
+
+
+
+   </script>
+</body>
+
+</html>
