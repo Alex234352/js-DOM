@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <style>
+      #parent input {
+         color: red;
+      }
+   </style>
+   <title> DOM parents Поиск элементов внутри другого элемента</title>
+</head>
+
+<body>
+
+   <div id="parent">
+      <p class="www">text</p>
+      <p class="www">text</p>
+      <p class="www">text</p>
+      <p class="ggg">text</p>
+      <p class="ggg">text</p>
+      <p class="ggg">text</p>
+   </div>
+
+
+
+   <script>
+
+
+
+      //  Найдите внутри родителя элементы с классом www и запишите их в переменную elems1. 
+      //  Затем найдите внутри родителя элементы с классом ggg и запишите их в переменную elems2.
+
+      let parent = document.querySelector('#parent')
+      let elems = parent.querySelectorAll('.www')
+      let elems = parent.querySelectorAll('.ggg')
+
+      let elems1 = document.querySelectorAll('#parent .www')
+      let elems2=document.querySelectorAll('#parent .ggg')
+
+
+   </script>
+</body>
+
+</html>

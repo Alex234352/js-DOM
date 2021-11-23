@@ -13,8 +13,12 @@
 
 <body>
 
-   <input id="first" value="1">
+   <!-- <input id="first" value="1"> -->
 
+   <input id="elem" value="abcde">
+   <p class="text">Kiev fghfghfghfgh</p>
+   <p class="text">Kiev fghfgfghfgjhh</p>
+   <p class="text">Kiev fghfghgjhghjghjghj</p>
 
    <!-- <a href="google.com">Собаки</a> -->
    <script>
@@ -34,18 +38,29 @@
       //  После того, как значение кнопки достигнет 10 - отвяжите обработчик события, чтобы кнопка больше не реагировала на нажатие.
 
 
-      let button = document.querySelector('#first')
-      button.addEventListener('click', function func() {
-         if (this.value >= 10) {
+      // let button = document.querySelector('#first')
+      // button.addEventListener('click', function func() {
+      //    if (this.value >= 10) {
+      //       this.removeEventListener('click', func)
+      //    }
+      //    else {
+      //       this.value++
+      //    }
+      // })
+
+
+      // Даны абзацы. По нажатию на любой из абзацев добавьте ему в конец восклицательный знак. 
+      // Сделайте так, чтобы это добавление происходило лишь по первому нажатию.
+
+
+
+      let text = document.querySelectorAll('.text')
+      for (let key of text) {
+         key.addEventListener('click', function func() {
+            this.innerHTML = this.innerHTML + '!'
             this.removeEventListener('click', func)
-         }
-         else {
-            this.value++
-         }
-      })
-
-
-
+         })
+      }
 
 
 

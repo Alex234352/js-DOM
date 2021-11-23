@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <style>
+      .makered {
+         color: rgb(199, 74, 74);
+      }
+
+      .makebold {
+         font-weight: bold;
+      }
+
+      .crossout {
+         text-decoration: underline;
+      }
+   </style>
+
+   <title> DOM style</title>
+</head>
+
+<body>
+
+   <!-- <p>text</p>
+   <p>text</p>
+   <p>text</p> -->
+   <!-- VLAAAADDDDDDDD -->
+   <input class="button" value='CrossOut' type="submit">
+   <input class="button" value='MakeBold' type="submit">
+   <input class="button" value="MakeRed" type="submit">
+
+   <p class="text">МАша гуляла с Пашей </p>
+
+   <!-- 
+   <input class="button1" value='CrossOut' type="submit">
+   <input class="button2" value='MakeBold' type="submit">
+   <input class="button3" value="MakeRed" type="submit">
+   <p> Мaша гуляла с Пашей </p>
+   <p> Мaша гуляла с Пашей </p>
+   <p> Мaша гуляла с Пашей </p> -->
+
+   <!-- <ul class="box">
+   <li>Чебурашка</li>
+   <li>Крокодил Гена</li>
+   <li>Шапокляк</li>
+   </ul> -->
+
+   <!-- <input id="btn" type="submit" value="Click"> -->
+
+   <!-- <div class="first">Перевод введенного текста. В приложении добавлена поддержка 108 языков.<br>
+      • Быстрый перевод. Скопируйте текст в любом приложении и нажмите на значок Google Переводчика, чтобы выполнить
+      перевод (поддерживаются все языки).<br>
+      • Перевод офлайн. Переводите с 59 языков и обратно без подключения к Интернету.<br>
+      • Быстрый перевод камерой. Мгновенный перевод любых надписей с 94 языков. <br> -->
+
+
+   <!-- </div> -->
+
+
+
+   <script>
+
+      // let elem=document.querySelector('#elem')
+      // elem.style.color='red';
+
+      //Дан див и кнопка. По клику на кнопку добавьте диву ширину, высоту и границу.
+      // let first = document.querySelector('#first');
+      // let button = document.querySelector('#button');
+      // button.addEventListener('click', function () {
+      //    first.style.border = '1px solid black';
+      //    first.style.width = '300px';
+      //    first.style.height = '900px';
+      // })
+
+      //Дан див с текстом и кнопка. По клику на кнопку установите диву размер шрифта в 20px, 
+      // а также верхнюю границу и фон.
+
+      // let first = document.querySelector('.first')
+      // let button = document.querySelector('#button')
+      // button.addEventListener('click', function () {
+      //    first.style.fontSize = '20px'
+      //    first.style.borderLeft = '5px'
+      //    first.style.backgroundColor = 'yellow'
+      // })
+
+
+      // Дан список ul и кнопка. По клику на кнопку добавьте тегам li свойство float в значении left.
+
+      // let box = document.querySelector('.box');
+      // let btn = document.querySelector('#btn');
+
+      // btn.addEventListener('click', function func() {
+      //    box.style.border = '1px solid black';
+      //    box.style.fontSize = '20px';
+      //    box.style.backgroundColor = '#ccc';
+      //    box.style.cssFloat = "left";
+      // });
+
+      //Стилизация с помощью CSS классов на JavaScript
+
+      // let text = document.querySelectorAll('p')
+
+      // for (let elem of text) {
+      //    elem.addEventListener('click', function () {
+      //       this.classList.add('colored')
+      //    })
+      // }
+
+      // Дан абзац.Даны кнопки 'перечеркнуть', 'сделать жирным', 'сделать красным'. 
+      // Пусть по нажатию на каждую кнопку заданное действие происходит с абзацем(становится красным, например).
+
+      // VLAAAADDDDDDDD!
+      let text = document.querySelector('.text')
+      let button = document.querySelectorAll('.button')
+      for (let key of button) {
+         key.addEventListener('click', func)
+      }
+
+      function func() {
+         if (this.value == 'CrossOut') {
+            text.classList.add('CrossOut')
+         }
+         else if (this.value == 'MakeBold') {
+            text.classList.add('MakeBold')
+         }
+         else if (this.value == 'MakeRed') {
+            text.classList.add('MakeRed')
+         }
+      }
+
+
+      // let text = document.querySelectorAll('p')
+      // let button1 = document.querySelector('.button1')
+      // let button2 = document.querySelector('.button2')
+      // let button3 = document.querySelector('.button3')
+
+      // for (let i of text) {
+      //    button1.addEventListener('click', function () {
+      //       i.classList.toggle('crossout')
+      //    })
+      //    button2.addEventListener('click', function () {
+      //       i.classList.toggle('makebold')
+      //    })
+      //    button3.addEventListener('click', function () {
+      //       i.classList.toggle('makered')
+      //    })
+      // }
+   </script>
+</body>
+
+</html>
